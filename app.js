@@ -11,7 +11,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.connect("mongodb+srv://zyy0503:qJs61WR0q8xSCigR@cluster0.jnbvouk.mongodb.net/todolistDB", {useNewUrlParser: true, useUnifiedTopology: true});
+const { MONGODB_USERNAME, MONGODB_PASSWORD } = process.env;
+mongoose.connect("mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@cluster0.jnbvouk.mongodb.net/todolistDB", {useNewUrlParser: true, useUnifiedTopology: true});
 const itemsSchema = {
   name: String
 };
