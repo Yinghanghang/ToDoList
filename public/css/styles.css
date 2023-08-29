@@ -76,7 +76,7 @@ input[type="text"] {
   background: transparent;
   font-size: 20px;
   font-weight: 200;
-  width: 313px;
+  width: 200px;
 }
 
 input[type="text"]:focus {
@@ -140,7 +140,7 @@ footer {
 
 /* Style for the "Create List" button */
 .customize-button {
-  padding: 10px 10px;
+  padding: 10px 15px;
   font-size: 16px;
   background-color: #BC8F8F;
   color: #fff;
@@ -150,6 +150,22 @@ footer {
   transition: background-color 0.3s;
   text-align: center;
 }
+
+.home-button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-left: 25px; 
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #5F9EA0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
 
 /* Hover effect for the button */
 .customize-button:hover {
